@@ -1,0 +1,21 @@
+.header {
+    height: 100px;
+    background-color: #ffffff;
+    padding-top: 20px;
+}
+
+.header__contact {
+
+    color: #00675d;
+    line-height: 12px;
+}
+
+.header__contact_text {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.header__contact_phone {
+    font-size: 27px;
+    font-weight: bold;
+}

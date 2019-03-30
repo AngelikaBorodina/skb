@@ -28,9 +28,8 @@ class RequestController extends \yii\web\Controller
             $request->ip = $_SERVER['REMOTE_ADDR'];
             $request->headers = json_encode($_SERVER);
 
-
             $request->save();
-            return 'OK';
+            $this->redirect(array('request/thanks'));
         }
 
         return $this->render('index', [
@@ -38,10 +37,9 @@ class RequestController extends \yii\web\Controller
         ]);
     }
 
-    public function actionView($id)
+    public function actionThanks()
     {
-        $request = Request::findOne($id);
-        echo ($request->getHeader('REMOTE_ADDR'));die;
+        return $this->render('thanks');
     }
 
 }

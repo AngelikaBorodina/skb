@@ -1,0 +1,17 @@
+.footer{
+    height: 134px;
+    font-size: 13px;
+    background-image: url("../images/footer_fon.jpg");
+    padding-top: 40px;
+}
+.footer__detail{
+    text-align: center;
+}
+
+.footer__contact{
+    text-align: right;
+}
+
+.footer__contact_phone{
+    font-size: 18px;
+}

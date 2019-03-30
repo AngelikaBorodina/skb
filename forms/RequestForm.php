@@ -40,6 +40,19 @@ class RequestForm extends \yii\base\Model
             [['subscription', 'accept_conditions'], 'filter', 'filter' => function ($value) {
                 return (int) $value;
             }],
+
+            //условная валидация
+            ['email', 'required', 'when' => function ($model) {
+                return $model->subscription == 1;
+            }, 'whenClient' => "function (attribute, value) { 
+                    return $('#requestform-subscription').val() == 1;
+                }", 'message'=>'Обязательно для заполнения при подписке'],
+
+            ['accept_conditions', function ($attribute) {
+                if (!$this->$attribute) {
+                    $this->addError($attribute, 'Необходимо согласиться с уловиями');
+                }
+            }]
         ];
     }
 
