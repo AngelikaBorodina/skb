@@ -48,12 +48,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'request/<id:\d+>' => 'request/view'
             ],
         ],
-
-
-
     ],
     'params' => $params
 ];

@@ -8,13 +8,13 @@ use yii\widgets\ActiveForm;
 /* @var $form ActiveForm */
 ?>
 <div class="banner">
-    <img class="banner__img" src="<?= \yii\helpers\Url::to(['@web/images/banner.png']) ?>" alt="">
+    <img class="banner__img" src="<?= \yii\helpers\Url::to(['@web/images/request/banner.png']) ?>" alt="">
 </div>
 <?php $form = ActiveForm::begin(); ?>
     <div class="container">
         <div class="row ">
             <div class="col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 request-block">
-                <img src="<?= \yii\helpers\Url::to(['@web/images/top.png']) ?>" class="request-block__top" alt="">
+                <img src="<?= \yii\helpers\Url::to(['@web/images/request/top.png']) ?>" class="request-block__top" alt="">
                 <div class="row">
                     <div class="col-sm-3 col-md-3 request-block__label">Город</div>
                     <div class="col-sm-6 col-md-6">
